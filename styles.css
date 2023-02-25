@@ -79,3 +79,20 @@ main .large {
         max-width: 600px;
     }
 }
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 1vw auto;
+    }
+
+    nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    nav h1 {
+        grid-column: span 4;
+        grid-row: 1;
+    }
+}
